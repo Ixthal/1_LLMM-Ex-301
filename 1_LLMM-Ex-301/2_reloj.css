@@ -1,0 +1,48 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#reloj{
+    border: 4px solid black;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+/*la idea era con el scaleX(-1) girar las manecillas para transformarlas pero no soy capaz*/
+.manecillas{
+    height: 200px;
+    width: 4px; 
+}
+
+#segundos{
+    border: 4px solid black;
+    animation: rotar 216000s linear infinite;
+    transform-origin: bottom;
+}
+
+#minutos{
+    border: 2px solid grey;
+    animation: rotar 3600s linear infinite;
+    transform-origin: bottom;
+}
+
+#horas{
+    border: 4px solid lightgrey;
+    animation: rotar 60s linear infinite;
+    transform-origin: bottom;
+}
+
+@keyframes rotar{
+    0%{
+        transform: rotateZ(0);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}

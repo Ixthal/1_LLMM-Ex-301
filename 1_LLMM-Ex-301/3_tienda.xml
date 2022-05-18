@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="./3_tienda.xsl" type="text/xsl"?>
+<tienda>
+             
+    <title>Tienda Online</title>
+    <encabezado>Bienvenid@s a mi tienda</encabezado>
+    <descripcion>Esto es una tienda online que vende productos a través de internet</descripcion>
+     <galeria>    
+        <producto>
+            <titulo>Gafas</titulo>
+            <descripcion>Son gafas normales para festivales</descripcion>
+            <precio>15 euros</precio>
+        </producto>
+
+        <producto>
+            <titulo>Gafas de sol</titulo>
+            <descripcion>Son gafas que quitan el sol</descripcion>
+            <precio>20 euros</precio>
+        </producto>
+
+        <producto>
+            <titulo>Gafas de nieve</titulo>
+            <descripcion>Son gafas para la nieve</descripcion>
+            <precio>30 euros</precio>
+        </producto>
+        
+        <producto>
+            <titulo>Gafas de vista</titulo>
+            <descripcion>Son para ver y para lectura</descripcion>
+            <precio>40 euros</precio>
+        </producto>
+    </galeria>        
+</tienda>

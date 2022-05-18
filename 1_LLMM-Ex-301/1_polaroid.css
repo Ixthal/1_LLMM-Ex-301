@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#general{
+    display: grid;
+    margin-top: 200px;
+    margin-left: 100px;
+    grid-template-columns: repeat(4, 200px);
+}
+.polaroid {
+    display: grid;
+    max-width: 200px;
+    background-color:white;
+    padding:12px 12px 50px 12px;
+    border:1px solid #BFBFBF;
+    box-shadow:10px 10px 30px rgba(0, 0, 0);
+}
+.polaroid:nth-child(even){
+    transform: rotate(10deg);
+    z-index: 2;
+}
+.polaroid:nth-child(odd){
+    transform: rotate(-25deg);
+    z-index: 1;
+}
+.imagen{
+    min-height: 100px;
+    width: 170px;
+    box-shadow:10px 10px 30px rgba(0, 0, 0, 0.5);
+    animation: cambiocolor infinite 4.5s ease-in-out both;
+    animation-delay: 1s;
+}
+.polaroid:hover{
+    transform: scale3d(1.15,1.15,1.15);
+    z-index: 10;
+}
+.polaroid:hover .imagen{
+    animation: vervideo 3s infinite forwards;
+}
+@keyframes vervideo{
+    100%{
+        background-image: url('./0_recursos/1_good-old-rick.gif');
+        image-orientation: 180deg;
+        border: image width 5fr;
+    }
+}
+.texto{
+    margin-top: 10px;
+    
+}
+@keyframes cambiocolor{
+    0%{
+        background-color: red;
+    }
+    25%{
+        background-color: orange;
+    }
+    50%{
+        background-color: yellow;
+    }
+    75%{
+        background-color: green;
+    }
+    100%{
+        background-color: blue;
+    }
+}
